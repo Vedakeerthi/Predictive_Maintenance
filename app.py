@@ -10,12 +10,13 @@ import pickle
 sc = StandardScaler()
 file = open(r'final_model.pkl','rb')
 model = pickle.load(file)
+rf = RandomForestRegressor()
 
 @st.cache_resource
 def predict(x_train,y_train,x_test,y_test):
     
-    model.fit(x_train,y_train)
-    y_pred = model.predict(x_test)
+    rf.fit(x_train,y_train)
+    y_pred = rf.predict(x_test)
     y_pred = y_pred.reshape(-1,1)
     
     st.title(f'Actual VS Predicted')
