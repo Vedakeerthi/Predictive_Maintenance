@@ -53,7 +53,7 @@ def add_remaining_useful_life(df):
 
 def main():
     st.title("Predictive Maintenance using NASA turbofan")
-    st.image('Result Images/Turbofan-operation-lbp.png')
+    st.image('https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Turbofan_operation_lbp.svg/872px-Turbofan_operation_lbp.svg.png')
     st.header('Drop all the required datasets')
 
     #Downloading the files
