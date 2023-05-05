@@ -29,7 +29,7 @@ def predict(x_train,y_train,x_test,y_test):
     st.pyplot(fig)
 
     mse = mean_squared_error(y_test,y_pred)
-    acc = round(model.score(x_train,y_train),2)*100  
+    acc = round(rf.score(x_train,y_train),2)*100  
     y_pred = pd.DataFrame(y_pred)
     y_pred = y_pred.rename(columns={0:'y_pred'})
     st.dataframe(y_pred, 1000, 1000)   
