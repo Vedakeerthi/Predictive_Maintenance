@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 import pickle 
 
 sc = StandardScaler()
-file = open(r'final_model.pkl','rb')
-model = pickle.load(file)
+#file = open(r'final_model.pkl','rb')
+#model = pickle.load(file)
 rf = RandomForestRegressor()
 
 @st.cache_resource
